@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation with Regular Expressions</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace, sans-serif;
+      background-color: rgb(30, 255, 0);
+      text-align: center;
+    }
+    form {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fbff00;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label, p {
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ff0000;
+    }
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      color: #6a0085;
+      background-color: #ff00dd;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .message {
+      color: rgb(0, 153, 255);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Validation with Regular Expressions</h1>
+  <form id="myForm">
+    <label for="inputField">Alphanumeric Input:</label>
+    <input type="text" id="inputField" name="inputField" required>
+    <p class="message" id="message"></p>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="validationScript.js"></script>
+</body>
+</html>
